@@ -3,7 +3,7 @@
 Aplicação de **Aprendizado de Máquina** que estima a probabilidade de um aluno de ensino superior abandonar o curso, explica *por quê* (SHAP) e apoia a equipe pedagógica a agir cedo.
 
 - **Disciplina:** AI
-- **Integrantes:** José Henrique, Ryan Budin, João Pedro, Daniel Augusto, Matheus Miranda
+- **Integrantes:** José Henrique, Ryan Budin, João Pedro, Daniel Augusto, Matheus Miranda, Guilherme Polotto
 - **Entrega:** 09/11/2026
 
 ## Estrutura do repositório
