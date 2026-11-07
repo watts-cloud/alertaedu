@@ -22,8 +22,14 @@ Aplicação de **Aprendizado de Máquina** que estima a probabilidade de um alun
 | `docs/referencias.md` | Fontes, artigos, bibliotecas (com versões), serviços de IA e legislação |
 | `notebooks/01_resultados.ipynb` | Notebook executável com a análise consolidada dos resultados |
 
-## Como executar (Windows / PowerShell)
+## Como executar (Windows)
 
+### Opção 1 — Execução rápida (2 cliques)
+Basta dar **dois cliques** no arquivo **`iniciar_app.bat`** na raiz do projeto.
+- Na primeira vez em um computador novo, ele cria automaticamente o ambiente `.venv` e instala os pacotes do `requirements.txt`.
+- Nas vezes seguintes, ele abre direto o aplicativo no navegador (`http://localhost:8501`).
+
+### Opção 2 — Pelo terminal (PowerShell)
 Requer Python 3.11+ (testado em 3.13).
 
 ```powershell
