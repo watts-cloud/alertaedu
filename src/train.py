@@ -23,6 +23,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.dummy import DummyClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import (
     ConfusionMatrixDisplay,
     RocCurveDisplay,
@@ -89,6 +90,21 @@ def build_models(X: pd.DataFrame, y: pd.Series) -> dict[str, Pipeline]:
                         eval_metric="logloss", random_state=RANDOM_STATE, n_jobs=-1,
                     ),
                 )
+            ]
+        ),
+        "Rede Neural (MLP)": Pipeline(
+            [
+                ("pre", lr_pre),
+                (
+                    "clf",
+                    MLPClassifier(
+                        hidden_layer_sizes=(64, 32),
+                        activation="relu",
+                        max_iter=500,
+                        early_stopping=True,
+                        random_state=RANDOM_STATE,
+                    ),
+                ),
             ]
         ),
     }
